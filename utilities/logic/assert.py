@@ -44,3 +44,16 @@ EXAMPLES = '''
       - "'foo' in some_command_result.stdout" 
       - "number_of_the_counting == 3"
 '''
+
+RETURN = '''
+assertion:
+    description: the assertion that failed
+    returned: failure
+    type: string
+    sample: "number_of_the_counting == 3"
+evaluated_to:
+    description: the value that the assertion evaluated to
+    returned: failure
+    type: boolean
+    sample: false
+'''
